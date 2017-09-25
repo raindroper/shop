@@ -1,6 +1,6 @@
 <template>
-    <div>
-        register
+    <div id="tmpl">
+        Cars
     </div>
 </template>
 

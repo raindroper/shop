@@ -1,6 +1,6 @@
 <template>
-    <div>
-        login
+    <div id="tmpl">
+        photo
     </div>
 </template>
 

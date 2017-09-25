@@ -19,22 +19,58 @@ import Mint from "mint-ui";
 //绑定mint-ui
 Vue.use(Mint);
 
+//导入全局css
+import "../statics/css/site.css"
+
 //导入component
-import login from "./component/account/login.vue";
-import register from "./component/account/register.vue";
+import home from "./component/home.vue";
+import car from "./component/car/car.vue";
+import goods from "./component/goods/goods.vue";
+import news from "./component/news/newslist.vue";
+import photo from "./component/photo/photo.vue";
+import subcom from "./component/subcom/subcom.vue";
+
+import "../statics/css/mui.min.css";
+
+//引入vue-resource
+import vueResource from "vue-resource";
+Vue.use(vueResource);
+
+//导入moment 日期格式化工具
+import moment from "moment";
+Vue.filter("datefmt",function (input,fmtString) {
+    return moment(input).format(fmtString);
+});
 
 //定义路由规则
 var router = new vueRouter({
     routes : [
         {
-            path : "/login",
-            component : login
+            path : "/home",
+            component : home
         },
         {
-            path : "/register",
-            component : register
-        }
-    ]
+            path : "/car",
+            component : car
+        },
+        {
+            path : "/goods",
+            component : goods
+        },
+        {
+            path : "/news/newslist",
+            component : news
+        },
+        {
+            path : "/photo",
+            component : photo
+        },
+        {
+            path : "/subcom",
+            component : subcom
+        },
+    ],
+    linkActiveClass : "mui-active"
 });
 
 //利用Vue对象进行渲染
