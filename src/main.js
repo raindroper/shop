@@ -28,7 +28,7 @@ import car from "./component/car/car.vue";
 import goods from "./component/goods/goods.vue";
 import news from "./component/news/newslist.vue";
 import photo from "./component/photo/photo.vue";
-import subcom from "./component/subcom/subcom.vue";
+import subcom from "./component/subcom/comment.vue";
 import newsinfo from "./component/news/newsinfo.vue"
 
 import "../statics/css/mui.min.css";
@@ -67,10 +67,6 @@ var router = new vueRouter({
         {
             path: "/photo",
             component: photo
-        },
-        {
-            path: "/subcom",
-            component: subcom
         },
         {
             path: "/news/newsinfo/:id",

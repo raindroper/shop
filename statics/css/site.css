@@ -3,12 +3,12 @@
     margin-bottom: 50px;
 }
 
-#commoncontent img {
+#commentcontent img {
     border: 0;
     width: 100%;
     display: block;
 }
 
-#commoncontent {
+#commentcontent {
     text-indent: 2em;
 }

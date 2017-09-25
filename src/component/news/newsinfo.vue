@@ -4,13 +4,15 @@
             <h4 v-text="info.title"></h4>
             <p>{{info.add_time | datefmt('YYYY-MM-DD')}} {{info.click}}次浏览</p>
         </div>
-        <div id="commoncontent" v-html="info.content"></div>
+        <div id="commentcontent" v-html="info.content"></div>
+        <comment :id="id"></comment>
     </div>
 </template>
 
 <script>
     import {Toast} from 'mint-ui';
     import common from "../../kits/common.js"
+    import comment from "../subcom/comment.vue"
 
     export default {
         data() {
@@ -37,6 +39,9 @@
                     this.info = body.message[0]
                 })
             }
+        },
+        components : {
+            comment
         }
     }
 </script>
