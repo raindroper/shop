@@ -2,17 +2,17 @@
     <div id="tmpl">
         <ul class="mui-table-view">
             <li v-for="item in list" class="mui-table-view-cell mui-media">
-                <a href="javascript:;">
+                <router-link v-bind="{to:'newsinfo/' + item.id}">
                     <img class="mui-media-object mui-pull-left" :src="item.img_url">
                     <div class="mui-media-body">
                         {{item.title}}
                         <p class='mui-ellipsis'>{{item.zhaiyao}}</p>
                         <div class="ft">
-                            <span>发表时间:{{item.add_time | datefmt("YYYY-MM-DD HH:mm:ss"}}</span><br>
+                            <span>发表时间:{{item.add_time | datefmt("YYYY-MM-DD HH:mm:ss")}}</span><br>
                             <span>点击数:{{item.click}}</span>
                         </div>
                     </div>
-                </a>
+                </router-link>
             </li>
         </ul>
     </div>
@@ -21,6 +21,7 @@
 
 <script>
     import {Toast} from 'mint-ui';
+
 
     export default {
         data() {
@@ -53,6 +54,7 @@
         height: 85px;
         width: 85px;
     }
+
     .mui-media-body {
         -ms-text-overflow: ellipsis;
         text-overflow: ellipsis;

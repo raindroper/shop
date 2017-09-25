@@ -29,54 +29,61 @@ import goods from "./component/goods/goods.vue";
 import news from "./component/news/newslist.vue";
 import photo from "./component/photo/photo.vue";
 import subcom from "./component/subcom/subcom.vue";
+import newsinfo from "./component/news/newsinfo.vue"
 
 import "../statics/css/mui.min.css";
 
 //引入vue-resource
 import vueResource from "vue-resource";
+
 Vue.use(vueResource);
 
 //导入moment 日期格式化工具
 import moment from "moment";
-Vue.filter("datefmt",function (input,fmtString) {
+
+Vue.filter("datefmt", function (input, fmtString) {
     return moment(input).format(fmtString);
 });
 
 //定义路由规则
 var router = new vueRouter({
-    routes : [
+    routes: [
         {
-            path : "/home",
-            component : home
+            path: "/home",
+            component: home
         },
         {
-            path : "/car",
-            component : car
+            path: "/car",
+            component: car
         },
         {
-            path : "/goods",
-            component : goods
+            path: "/goods",
+            component: goods
         },
         {
-            path : "/news/newslist",
-            component : news
+            path: "/news/newslist",
+            component: news
         },
         {
-            path : "/photo",
-            component : photo
+            path: "/photo",
+            component: photo
         },
         {
-            path : "/subcom",
-            component : subcom
+            path: "/subcom",
+            component: subcom
         },
+        {
+            path: "/news/newsinfo/:id",
+            component: newsinfo
+        }
     ],
-    linkActiveClass : "mui-active"
+    linkActiveClass: "mui-active"
 });
 
 //利用Vue对象进行渲染
 new Vue({
-    el : "#app",
+    el: "#app",
     router,
-    render : c=>c(App)
+    render: c => c(App)
 
 })
