@@ -8,7 +8,7 @@
                         {{item.title}}
                         <p class='mui-ellipsis'>{{item.zhaiyao}}</p>
                         <div class="ft">
-                            <span>发表时间:{{item.add_time}}</span><br>
+                            <span>发表时间:{{item.add_time | datefmt("YYYY-MM-DD HH:mm:ss"}}</span><br>
                             <span>点击数:{{item.click}}</span>
                         </div>
                     </div>
