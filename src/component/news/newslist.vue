@@ -21,7 +21,7 @@
 
 <script>
     import {Toast} from 'mint-ui';
-
+    import common from "../../kits/common.js"
 
     export default {
         data() {
@@ -31,7 +31,8 @@
         },
         methods: {
             getNews() {
-                this.$http.get("http://182.254.146.100:8899/api/getnewslist").then(
+                var url = common.apidomain;
+                this.$http.get(url + "/api/getnewslist").then(
                     res => {
                         if (res.body.status !== 0) {
                             Toast("请求失败");

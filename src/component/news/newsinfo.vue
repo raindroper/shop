@@ -4,32 +4,30 @@
             <h4 v-text="info.title"></h4>
             <p>{{info.add_time | datefmt('YYYY-MM-DD')}} {{info.click}}次浏览</p>
         </div>
-        <div id="content" v-html="info.content">
-
-        </div>
+        <div id="commoncontent" v-html="info.content"></div>
     </div>
 </template>
 
 <script>
-    import { Toast } from 'mint-ui';
+    import {Toast} from 'mint-ui';
+    import common from "../../kits/common.js"
+
     export default {
-        data(){
+        data() {
             return {
-                id : 0,
-                info : {}
+                id: 0,
+                info: {}
             }
         },
-        created(){
-            console.log(this.id);
+        created() {
             this.id = this.$route.params.id;
-            console.log(this.id);
             this.getinfo();
         },
-        methods : {
-            getinfo(){
-                var url = "http://182.254.146.100:8899/api/getnew/" + this.id;
+        methods: {
+            getinfo() {
+                var url = common.apidomain + "/api/getnew/" + this.id;
 
-                this.$http.get(url).then(function(res){
+                this.$http.get(url).then(function (res) {
                     var body = res.body;
                     if (body.status != 0) {
                         Toast("请求失败");
@@ -44,18 +42,17 @@
 </script>
 
 <style scoped lang="css">
-    .title h4{
+    .title h4 {
         color: #0094ff;
     }
-    .title p{
-        color:rgba(0,0,0,0.5);
+
+    .title p {
+        color: rgba(0, 0, 0, 0.5);
     }
 
-    .title,.content{
+    .title, .content {
         padding: 5px;
     }
-    #content  img {
-        border: 0;
-        width: 100%;
-    }
+
+
 </style>

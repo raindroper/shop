@@ -49,7 +49,8 @@
 
 
 <script>
-    import {Toast} from 'mint-ui';
+    import {Toast} from "mint-ui";
+    import common from "../kits/common.js"
 
     export default {
         data() {
@@ -59,8 +60,8 @@
         },
         methods: {
             geiSwipe() {
-                var url = "http://182.254.146.100:8899/"
-                this.$http.get(url + "api/getlunbo").then(
+                var url = common.apidomain;
+                this.$http.get(url + "/api/getlunbo").then(
                     res => {
                         if (res.body.status !== 0) {
                             Toast("请求失败");
