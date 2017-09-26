@@ -6,15 +6,19 @@
                 <h4>{{photoinfo.title}}</h4>
                 <p>{{photoinfo.add_time}}{{photoinfo.click}}</p>
                 <p class="line"></p>
+
+                <div class="mui-content">
+                    <ul class="mui-table-view mui-grid-view mui-grid-9">
+                        <li v-for="(item, index) in photolist"
+                            class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                            <img class="preview-img" :src="item.src" height="100"
+                                 @click="$preview.open(index, photolist)">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="mui-content">
-            <ul class="mui-table-view mui-grid-view mui-grid-9">
-                <li v-for="item in photolist" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-                    <img :src="item.src">
-                </li>
-            </ul>
-        </div>
+
 
         <p v-html="photoinfo.content"></p>
 
@@ -60,6 +64,12 @@
                             Toast("请求失败");
                             return
                         }
+                        res.body.message.forEach(function (item) {
+                            var img = document.createElement("img");
+                            img.src = item.src;
+                            item.h = img.height;
+                            item.w = img.width;
+                        })
                         this.photolist = res.body.message;
                     }
                 )

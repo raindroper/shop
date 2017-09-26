@@ -19,14 +19,9 @@ module.exports = {
                 loader: 'style-loader!css-loader!less-loader'
             },
             {
-                test: /\.(png|jpg|gif|ttf)$/,
+                test: /\.(png|jpg|gif|ttf|svg)$/,
                 loader: 'url-loader?limit=20000'
             },
-            // {
-            //     test: /\.js$/,
-            //     loader: "babel-loader",
-            //     exclude: /node_modules/
-            // },
             {
                 // 打包.vue文件
                 test: /\.vue$/,   //表示当前要打包的文件的后缀正则表达式

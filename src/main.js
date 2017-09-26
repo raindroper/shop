@@ -28,9 +28,10 @@ import car from "./component/car/car.vue";
 import goods from "./component/goods/goods.vue";
 import news from "./component/news/newslist.vue";
 import photo from "./component/photo/photo.vue";
-import newsinfo from "./component/news/newsinfo.vue"
-import photoinfo from "./component/photo/photoinfo.vue"
+import newsinfo from "./component/news/newsinfo.vue";
+import photoinfo from "./component/photo/photoinfo.vue";
 
+//导入mui样式文件
 import "../statics/css/mui.min.css";
 
 //引入vue-resource
@@ -44,6 +45,10 @@ import moment from "moment";
 Vue.filter("datefmt", function (input, fmtString) {
     return moment(input).format(fmtString);
 });
+//导入VuePreview
+import VuePreview from "vue-preview";
+
+Vue.use(VuePreview);
 
 //定义路由规则
 var router = new vueRouter({
@@ -61,7 +66,7 @@ var router = new vueRouter({
             component: car
         },
         {
-            path: "/goods",
+            path: "/goods/goodslist",
             component: goods
         },
         {
