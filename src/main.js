@@ -28,8 +28,8 @@ import car from "./component/car/car.vue";
 import goods from "./component/goods/goods.vue";
 import news from "./component/news/newslist.vue";
 import photo from "./component/photo/photo.vue";
-import subcom from "./component/subcom/comment.vue";
 import newsinfo from "./component/news/newsinfo.vue"
+import photoinfo from "./component/photo/photoinfo.vue"
 
 import "../statics/css/mui.min.css";
 
@@ -49,6 +49,10 @@ Vue.filter("datefmt", function (input, fmtString) {
 var router = new vueRouter({
     routes: [
         {
+            path: "/",
+            redirect: "/home"
+        },
+        {
             path: "/home",
             component: home
         },
@@ -65,12 +69,16 @@ var router = new vueRouter({
             component: news
         },
         {
-            path: "/photo",
+            path: "/photo/photolist",
             component: photo
         },
         {
             path: "/news/newsinfo/:id",
             component: newsinfo
+        },
+        {
+            path: "/photo/photoinfo/:id",
+            component: photoinfo
         }
     ],
     linkActiveClass: "mui-active"

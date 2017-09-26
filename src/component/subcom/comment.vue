@@ -13,7 +13,7 @@
             <div v-for="(item,index) in list">
                 <div class="title">
                     <span>第{{index + 1}}楼:</span>
-                    <span>用户：{{item.user_name}}</span>虫哦你
+                    <span>用户：{{item.user_name}}</span>
                     <span>发表时间：{{item.add_time | datefmt('YYYY-MM-DD HH:mm:ss')}}</span>
                 </div>
                 <ul class="mui-table-view">
@@ -77,7 +77,6 @@
                             } else {
                                 this.list = res.body.message;
                             }
-                            console.dir(this.list);
                         }
                     )
             }
