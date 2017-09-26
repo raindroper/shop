@@ -13,7 +13,7 @@
             <div v-for="(item,index) in list">
                 <div class="title">
                     <span>第{{index + 1}}楼:</span>
-                    <span>用户：{{item.user_name}}</span>
+                    <span>用户：{{item.user_name}}</span>虫哦你
                     <span>发表时间：{{item.add_time | datefmt('YYYY-MM-DD HH:mm:ss')}}</span>
                 </div>
                 <ul class="mui-table-view">
@@ -38,13 +38,13 @@
                 commentContent: "",
                 pageindex: 0,
                 list: [],
-                flag : 0
+                flag: 0
             }
         },
         methods: {
             getMore() {
                 this.pageindex++;
-                this.getComment(this.pageindex,1);
+                this.getComment(this.pageindex, 1);
             },
             postComment() {
                 if (this.commentContent.trim().length <= 0) {
@@ -58,11 +58,12 @@
                     res => {
                         Toast(res.body);
                         this.commentContent = "";
-                        this.getComment(this.pageindex,0);
+                        this.pageindex = 0;
+                        this.getComment(this.pageindex, 0);
                     }
                 )
             },
-            getComment(pageindex,flag) {
+            getComment(pageindex, flag) {
                 pageindex = pageindex || 1;
                 this.$http.get(common.apidomain + "/api/getcomments/" + this.id + "?pageindex=" + pageindex)
                     .then(
@@ -71,12 +72,12 @@
                                 Toast("请求失败");
                                 return
                             }
-                            if (flag === 1){
+                            if (flag === 1) {
                                 this.list = this.list.concat(res.body.message);
                             } else {
                                 this.list = res.body.message;
                             }
-
+                            console.dir(this.list);
                         }
                     )
             }

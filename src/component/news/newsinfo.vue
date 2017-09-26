@@ -35,7 +35,6 @@
                         Toast("请求失败");
                         return;
                     }
-                    console.log(body.message);
                     this.info = body.message[0]
                 })
             }
