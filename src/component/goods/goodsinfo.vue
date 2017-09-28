@@ -1,6 +1,12 @@
 <!-- coded by Rae -->
 <template>
-    <div id="tmpl">
+    <div id="tmpl" ref="box">
+        <transition name="show"
+                    @before-enter="beforeEnter"
+                    @enter="enter"
+                    @after-enter="afterEnter">
+            <div class="ball" v-if="isshow"></div>
+        </transition>
         <div class="slider">
             <slider :imgurl="imgurl"></slider>
         </div>
@@ -14,6 +20,7 @@
                 <li class="inputli">
                     购买数量：
                     <inputNumber class="input-number" @send="getcount"></inputNumber>
+
                 </li>
 
                 <li>
@@ -56,6 +63,8 @@
     export default {
         data() {
             return {
+                scrollheight: 0,
+                isshow: false,
                 id: 0,
                 info: {},
                 count: 0
@@ -81,6 +90,22 @@
                     id: this.id,
                     count: this.count
                 });
+                this.scrollheight = this.$refs.box.offsetParent.scrollTop;
+                this.isshow = !this.isshow;
+            },
+            beforeEnter(el) {
+                el.style.position = "absolute";
+                el.style.left = "170px";
+                el.style.top = "400px";
+            },
+            enter(el,done){
+                el.offsetWidth;
+                el.style.left = "250px";
+                el.style.top = 600 + this.scrollheight + "px";
+                done();
+            },
+            afterEnter(el){
+                this.isshow = !this.isshow;
             }
         },
         created() {
@@ -145,5 +170,19 @@
         position: absolute;
         left: 100px;
         top: 5px;
+    }
+
+    .ball {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        z-index:9999;
+        position: absolute;
     }
 </style>
