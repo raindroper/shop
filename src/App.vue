@@ -34,7 +34,7 @@
         },
         methods: {
             getcount(input) {
-                this.goodscount = input;
+                this.goodscount += input;
             }
         },
         created() {

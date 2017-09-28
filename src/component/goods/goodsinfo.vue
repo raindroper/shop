@@ -49,8 +49,9 @@
 
     import {Toast} from "mint-ui";
     import common from "../../kits/common.js";
-    import slider from "../subcom/slider.vue"
-    import inputNumber from "../subcom/inputNumber.vue"
+    import slider from "../subcom/slider.vue";
+    import inputNumber from "../subcom/inputNumber.vue";
+    import {setlocal} from "../../kits/local.js";
 
     export default {
         data() {
@@ -74,8 +75,12 @@
             getcount(input) {
                 this.count = input;
             },
-            send(){
-                this.$emit("send",this.count);
+            send() {
+                this.$emit("send", this.count);
+                setlocal({
+                    id: this.id,
+                    count: this.count
+                });
             }
         },
         created() {
