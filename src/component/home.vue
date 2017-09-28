@@ -1,9 +1,7 @@
 <template>
     <div id="tmpl">
 
-        <mt-swipe :auto="1000000000">
-            <mt-swipe-item v-for="item in swipeList"><img :src="item.img" alt=""></mt-swipe-item>
-        </mt-swipe>
+        <slider :imgurl="imgurl"></slider>
         <div class="mui-content">
             <ul class="mui-table-view mui-grid-view mui-grid-9">
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
@@ -50,50 +48,28 @@
 
 <script>
     import {Toast} from "mint-ui";
-    import common from "../kits/common.js"
+    import common from "../kits/common.js";
+    import slider from "../component/subcom/slider.vue"
 
     export default {
         data() {
             return {
-                swipeList: []
+                imgurl: common.apidomain + "/api/getlunbo"
             }
         },
-        methods: {
-            geiSwipe() {
-                var url = common.apidomain;
-                this.$http.get(url + "/api/getlunbo").then(
-                    res => {
-                        if (res.body.status !== 0) {
-                            Toast("请求失败");
-                            return
-                        }
-                        this.swipeList = res.body.message;
-                    }
-                )
-            }
-        },
+        methods: {},
         created() {
-            this.geiSwipe();
+
+        },
+        components: {
+            slider
         }
     }
 </script>
 
 
 <style scoped>
-    .mint-swipe-item {
-        height: 200px;
-        width: 100%;
-    }
 
-    .mint-swipe,.mint-swipe-items-wrap {
-        height: 200px;
-    }
-
-    .mint-swipe-item > img {
-        width: 100%;
-        height: 200px;
-        vertical-align: bottom;
-    }
 
     .mui-content, .mui-content ul {
         background-color: #fff;

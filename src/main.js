@@ -30,6 +30,7 @@ import news from "./component/news/newslist.vue";
 import photo from "./component/photo/photo.vue";
 import newsinfo from "./component/news/newsinfo.vue";
 import photoinfo from "./component/photo/photoinfo.vue";
+import goodsinfo from "./component/goods/goodsinfo.vue"
 
 //导入mui样式文件
 import "../statics/css/mui.min.css";
@@ -84,6 +85,10 @@ var router = new vueRouter({
         {
             path: "/photo/photoinfo/:id",
             component: photoinfo
+        },
+        {
+            path: "/goods/goodsinfo/:id",
+            component: goodsinfo
         }
     ],
     linkActiveClass: "mui-active"
