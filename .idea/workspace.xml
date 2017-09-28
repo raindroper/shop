@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf4e371-0db5-46d3-8155-85109c353e78" name="默认" comment="图片分享详情页面&gt;缩略图">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/goods/goodsinfo.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/subcom/slider.vue" />
+    <list default="true" id="eaf4e371-0db5-46d3-8155-85109c353e78" name="默认" comment="轮播图提取">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/goods/goodscomment.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/goods/goodsdesc.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/goods/goods.vue" afterPath="$PROJECT_DIR$/src/component/goods/goods.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/home.vue" afterPath="$PROJECT_DIR$/src/component/home.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/goods/goodsinfo.vue" afterPath="$PROJECT_DIR$/src/component/goods/goodsinfo.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/photo/photoinfo.vue" afterPath="$PROJECT_DIR$/src/component/photo/photoinfo.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/subcom/slider.vue" afterPath="$PROJECT_DIR$/src/component/subcom/slider.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statics/css/site.css" afterPath="$PROJECT_DIR$/statics/css/site.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,52 +23,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54146343">
+    <splitter split-orientation="horizontal" split-proportion="0.55635494">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="89" column="41" lean-forward="true" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+                <state relative-caret-position="714">
+                  <caret line="34" column="62" lean-forward="false" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
                   <folding>
                     <element signature="e#336#376#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/home.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="51" column="55" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="51" selection-end-column="55" />
-                  <folding>
-                    <element signature="e#2202#2232#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="slider.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/subcom/slider.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="882">
-                  <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#232#262#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="goods.vue" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/goods/goods.vue">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="987">
-                  <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-                  <folding>
-                    <element signature="e#1109#1151#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -74,10 +41,10 @@
           <file leaf-file-name="goodsinfo.vue" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/component/goods/goodsinfo.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="441">
-                  <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+                <state relative-caret-position="231">
+                  <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
                   <folding>
-                    <element signature="e#150#180#0" expanded="true" />
+                    <element signature="e#1481#1511#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -90,18 +57,48 @@
           <file leaf-file-name="goodslist.vue" pinned="false" current-in-tab="false">
             <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/05vue项目 - 商品详情 - 实现从商品列表页面跳转到详情页面功能代码.avi/src/components/goods/goodslist.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+                <state relative-caret-position="273">
+                  <caret line="71" column="40" lean-forward="false" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="goodsinfo.vue" pinned="false" current-in-tab="true">
-            <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/07vue项目 - 商品详情 - 实现商品轮播图组件的提取silder.vue.avi/src/components/goods/goodsinfo.vue">
+          <file leaf-file-name="inputNumber.vue" pinned="false" current-in-tab="true">
+            <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/12vue项目 - 商品详情 - 实现商品详情页面的购买区域中的inputNumber组件功能.avi/src/components/subcom/inputNumber.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="65" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="goodsinfo.vue" pinned="false" current-in-tab="false">
+            <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/10vue项目 - 商品详情 - 实现商品详情页面的图文详情开发.avi/src/components/goods/goodsinfo.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="goodsdesc.vue" pinned="false" current-in-tab="false">
+            <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/10vue项目 - 商品详情 - 实现商品详情页面的图文详情开发.avi/src/components/goods/goodsdesc.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="291">
+                  <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="silder.vue" pinned="false" current-in-tab="false">
+            <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/10vue项目 - 商品详情 - 实现商品详情页面的图文详情开发.avi/src/components/subcom/silder.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="189">
+                  <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -153,7 +150,6 @@
         <option value="D:/00前端学习/就业班资料/流行框架/Vue-005/代码/代码/008-日期格式化/src/components/news/newslist.vue" />
         <option value="$PROJECT_DIR$/src/component/news/newsInfo.vue" />
         <option value="$PROJECT_DIR$/src/component/news/newslist.vue" />
-        <option value="$PROJECT_DIR$/statics/css/site.css" />
         <option value="D:/00前端学习/就业班资料/流行框架/Vue-006/代码/01vue项目 - 评论组件功能/src/components/subcom/comment.vue" />
         <option value="$PROJECT_DIR$/src/component/news/newsinfo.vue" />
         <option value="$PROJECT_DIR$/src/kits/common.js" />
@@ -161,12 +157,17 @@
         <option value="$PROJECT_DIR$/src/component/photo/photo.vue" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/component/photo/photoinfo.vue" />
         <option value="$PROJECT_DIR$/src/component/home.vue" />
-        <option value="$PROJECT_DIR$/src/component/subcom/slider.vue" />
+        <option value="D:/00前端学习/就业班资料/流行框架/Vue-007/代码/10vue项目 - 商品详情 - 实现商品详情页面的图文详情开发.avi/src/components/goods/goodsinfo.vue" />
+        <option value="D:/00前端学习/就业班资料/流行框架/Vue-007/代码/10vue项目 - 商品详情 - 实现商品详情页面的图文详情开发.avi/src/components/goods/goodsdesc.vue" />
         <option value="$PROJECT_DIR$/src/component/goods/goods.vue" />
-        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/component/goods/goodsdesc.vue" />
+        <option value="$PROJECT_DIR$/src/component/subcom/slider.vue" />
+        <option value="$PROJECT_DIR$/statics/css/site.css" />
         <option value="$PROJECT_DIR$/src/component/goods/goodsinfo.vue" />
+        <option value="$PROJECT_DIR$/src/component/photo/photoinfo.vue" />
+        <option value="$PROJECT_DIR$/src/component/goods/goodscomment.vue" />
+        <option value="$PROJECT_DIR$/src/main.js" />
       </list>
     </option>
   </component>
@@ -212,6 +213,9 @@
         </selected-state>
       </profile-state>
     </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -380,7 +384,7 @@
       <workItem from="1506386557962" duration="3239000" />
       <workItem from="1506391314161" duration="88000" />
       <workItem from="1506392618574" duration="18527000" />
-      <workItem from="1506560235976" duration="7000000" />
+      <workItem from="1506560235976" duration="11874000" />
     </task>
     <task id="LOCAL-00001" summary="日期格式化">
       <created>1506325975552</created>
@@ -424,20 +428,27 @@
       <option name="project" value="LOCAL" />
       <updated>1506426035895</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="轮播图提取">
+      <created>1506567299746</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1506567299746</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61293000" />
+    <option name="totallyTimeSpent" value="66167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13319239" sideWeight="0.7786517" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118393235" sideWeight="0.7786517" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13319239" sideWeight="0.22134832" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118393235" sideWeight="0.22134832" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.016853932" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6719101" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -490,79 +501,14 @@
     <MESSAGE value="评论功能完善" />
     <MESSAGE value="图片分享详情页面" />
     <MESSAGE value="图片分享详情页面&gt;缩略图" />
-    <option name="LAST_COMMIT_MESSAGE" value="图片分享详情页面&gt;缩略图" />
+    <MESSAGE value="轮播图提取" />
+    <option name="LAST_COMMIT_MESSAGE" value="轮播图提取" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <element signature="e#336#376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/00前端学习/框架 封装/mui-master/mui-master/examples/hello-mui/examples/tabbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="71" column="14" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="71" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-005/代码/代码/001-配置路由/statics/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-005/代码/代码/001-配置路由/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-005/代码/代码/004-根组件底部样式激活/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-005/代码/代码/004-根组件底部样式激活/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/mui.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mint-ui/lib/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -706,14 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/subcom/comment.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -761,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kits/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -787,42 +717,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="89" column="41" lean-forward="true" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
-          <folding>
-            <element signature="e#336#376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/photo/photoinfo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="60" column="88" lean-forward="true" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
-          <folding>
-            <element signature="e#920#962#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/photo/photo.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1218">
           <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding>
             <element signature="e#807#848#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/goods/goods.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-          <folding>
-            <element signature="e#1109#1151#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -843,32 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/05vue项目 - 商品详情 - 实现从商品列表页面跳转到详情页面功能代码.avi/src/components/goods/goodslist.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/07vue项目 - 商品详情 - 实现商品轮播图组件的提取silder.vue.avi/src/components/goods/goodsinfo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/subcom/slider.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-          <folding>
-            <element signature="e#232#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/02vue项目 - 图片分享详情- 实现图片分享详情页的缩略图的数据动态化.avi/src/components/photo/photoinfo.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -877,12 +751,160 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/07vue项目 - 商品详情 - 实现商品轮播图组件的提取silder.vue.avi/src/components/goods/goodsinfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/08vue项目 - 商品详情 - 实现商品详情页面的其他区域静态结构设计.avi/src/components/goods/goodsinfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/09vue项目 - 商品详情 - 实现商品详情页面的详情数据动态化.avi/src/components/goods/goodsinfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/05vue项目 - 商品详情 - 实现从商品列表页面跳转到详情页面功能代码.avi/src/components/goods/goodslist.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="71" column="40" lean-forward="false" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/10vue项目 - 商品详情 - 实现商品详情页面的图文详情开发.avi/src/components/goods/goodsinfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/10vue项目 - 商品详情 - 实现商品详情页面的图文详情开发.avi/statics/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/goods/goods.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="64" lean-forward="false" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding>
+            <element signature="e#1107#1149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/10vue项目 - 商品详情 - 实现商品详情页面的图文详情开发.avi/src/components/goods/goodsdesc.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/10vue项目 - 商品详情 - 实现商品详情页面的图文详情开发.avi/src/components/subcom/silder.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/subcom/slider.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="e#238#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/goods/goodsdesc.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="e#197#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/subcom/comment.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <folding>
+            <element signature="e#981#1011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="62" lean-forward="false" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+          <folding>
+            <element signature="e#336#376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/00前端学习/就业班资料/流行框架/Vue-007/代码/12vue项目 - 商品详情 - 实现商品详情页面的购买区域中的inputNumber组件功能.avi/src/components/subcom/inputNumber.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/goods/goodscomment.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/photo/photoinfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+          <folding>
+            <element signature="e#920#962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/goods/goodsinfo.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="231">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding>
-            <element signature="e#150#180#0" expanded="true" />
+            <element signature="e#1481#1511#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -79,7 +79,6 @@
             this.id = this.$route.params.id;
             this.getimginfo();
             this.gethumimage();
-            console.log(this.photoinfo);
         }
     }
 </script>

@@ -30,7 +30,9 @@ import news from "./component/news/newslist.vue";
 import photo from "./component/photo/photo.vue";
 import newsinfo from "./component/news/newsinfo.vue";
 import photoinfo from "./component/photo/photoinfo.vue";
-import goodsinfo from "./component/goods/goodsinfo.vue"
+import goodsinfo from "./component/goods/goodsinfo.vue";
+import goodsdesc from "./component/goods/goodsdesc.vue";
+import goodscomment from "./component/goods/goodscomment.vue";
 
 //导入mui样式文件
 import "../statics/css/mui.min.css";
@@ -89,6 +91,14 @@ var router = new vueRouter({
         {
             path: "/goods/goodsinfo/:id",
             component: goodsinfo
+        },
+        {
+            path: "/goods/goodsdesc/:id",
+            component: goodsdesc
+        },
+        {
+            path: "/goods/goodscomment/:id",
+            component: goodscomment
         }
     ],
     linkActiveClass: "mui-active"

@@ -7,7 +7,7 @@
                     <router-link v-bind="{to:'/goods/goodsinfo/'+item.id}">
                         <img class="mui-media-object"
                              :src="item.img_url">
-                        <div class="mui-media-body">Color of SIP CBD</div>
+                        <div class="mui-media-body">{{item.title}}</div>
                         <div class="desc">
                             <p>
                                 <span>￥{{item.sell_price}}</span>

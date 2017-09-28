@@ -3,9 +3,10 @@
     margin-bottom: 50px;
 }
 
-#commentcontent img {
+img {
     border: 0;
     width: 100%;
+    height:auto;
     display: block;
 }
 

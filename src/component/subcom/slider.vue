@@ -1,7 +1,7 @@
 <!-- coded by Rae -->
 <template>
     <div>
-        <mt-swipe :auto="2000">
+        <mt-swipe :auto="2000000000">
             <mt-swipe-item v-for="item in swipeList"><img :src="item.img" alt=""></mt-swipe-item>
         </mt-swipe>
     </div>
@@ -42,17 +42,17 @@
 
 <style scoped>
     .mint-swipe-item {
-        height: 200px;
+        height: 250px;
         width: 100%;
     }
 
     .mint-swipe, .mint-swipe-items-wrap {
-        height: 200px;
+        height: 250px;
     }
 
     .mint-swipe-item > img {
         width: 100%;
-        height: 200px;
+        height: 250px;
         vertical-align: bottom;
     }
 </style>
