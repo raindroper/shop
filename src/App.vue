@@ -1,7 +1,7 @@
 <template>
     <div>
         <mt-header fixed title="固定在顶部"></mt-header>
-        <router-view></router-view>
+        <router-view @send="getcount"></router-view>
         <nav class="mui-bar mui-bar-tab">
             <router-link class="mui-tab-item" to="/home">
                 <span class="mui-icon mui-icon-home"></span>
@@ -12,7 +12,7 @@
                 <span class="mui-tab-label">消息</span>
             </router-link>
             <router-link class="mui-tab-item" to="/car">
-                <span class="mui-icon mui-icon-contact"><span class="mui-badge">9</span></span>
+                <span class="mui-icon mui-icon-contact"><span class="mui-badge">{{goodscount}}</span></span>
                 <span class="mui-tab-label">购物车</span>
             </router-link>
             <router-link class="mui-tab-item" to="/tabbar-with-map">
@@ -28,11 +28,14 @@
     export default {
         data() {
             return {
-                msg: "hello"
+                msg: "hello",
+                goodscount: 0
             }
         },
         methods: {
-
+            getcount(input) {
+                this.goodscount = input;
+            }
         },
         created() {
 

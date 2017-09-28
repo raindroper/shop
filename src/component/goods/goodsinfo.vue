@@ -11,13 +11,14 @@
                 <li class="price">
                     市场价: <s>￥{{info.market_price}}</s> 销售价：<span>￥{{info.sell_price}}</span>
                 </li>
-                <li>
+                <li class="inputli">
                     购买数量：
+                    <inputNumber class="input-number" @send="getcount"></inputNumber>
                 </li>
 
                 <li>
                     <mt-button type="primary" size="small">立即购买</mt-button>
-                    <mt-button type="danger" size="small">加入购物车</mt-button>
+                    <mt-button type="danger" size="small" @click="send">加入购物车</mt-button>
                 </li>
             </ul>
         </div>
@@ -32,8 +33,6 @@
             </ul>
         </div>
 
-        <!--3.0 图文详情-->
-        <!--4.0 商品评论-->
         <div id="other">
             <router-link v-bind="{to:'/goods/goodsdesc/'+id}">
                 <mt-button class="imgdesc" type="primary" size="large">图文详情</mt-button>
@@ -51,12 +50,14 @@
     import {Toast} from "mint-ui";
     import common from "../../kits/common.js";
     import slider from "../subcom/slider.vue"
+    import inputNumber from "../subcom/inputNumber.vue"
 
     export default {
         data() {
             return {
                 id: 0,
-                info: {}
+                info: {},
+                count: 0
             }
         },
         methods: {
@@ -69,6 +70,12 @@
                         this.info = res.body.message[0];
                     }
                 );
+            },
+            getcount(input) {
+                this.count = input;
+            },
+            send(){
+                this.$emit("send",this.count);
             }
         },
         created() {
@@ -77,7 +84,8 @@
             this.getinfo()
         },
         components: {
-            slider
+            slider,
+            inputNumber
         }
     }
 </script>
@@ -122,5 +130,15 @@
 
     #other .imgdesc {
         margin-bottom: 20px;
+    }
+
+    .inputli {
+        position: relative;
+    }
+
+    .input-number {
+        position: absolute;
+        left: 100px;
+        top: 5px;
     }
 </style>

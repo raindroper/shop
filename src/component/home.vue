@@ -50,6 +50,7 @@
     import {Toast} from "mint-ui";
     import common from "../kits/common.js";
     import slider from "../component/subcom/slider.vue"
+    import inputNumber from "../component/subcom/inputNumber.vue";
 
     export default {
         data() {
@@ -59,7 +60,6 @@
         },
         methods: {},
         created() {
-
         },
         components: {
             slider
