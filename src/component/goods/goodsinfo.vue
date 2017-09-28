@@ -13,12 +13,12 @@
                 </li>
                 <li class="inputli">
                     购买数量：
-                    <inputNumber class="input-number" @send="getcount"></inputNumber>
+                    <inputNumber class="input-number"></inputNumber>
                 </li>
 
                 <li>
                     <mt-button type="primary" size="small">立即购买</mt-button>
-                    <mt-button type="danger" size="small" @click="send">加入购物车</mt-button>
+                    <mt-button type="danger" size="small">加入购物车</mt-button>
                 </li>
             </ul>
         </div>
@@ -70,12 +70,6 @@
                         this.info = res.body.message[0];
                     }
                 );
-            },
-            getcount(input) {
-                this.count = input;
-            },
-            send(){
-                this.$emit("send",this.count);
             }
         },
         created() {

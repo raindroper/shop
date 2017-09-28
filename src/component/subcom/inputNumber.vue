@@ -9,6 +9,9 @@
 
 
 <script>
+
+    import {bus} from "../goods/eventbus.js"
+
     export default {
         data() {
             return {
@@ -18,22 +21,19 @@
         methods: {
             add() {
                 this.count++;
-                this.sendcount();
+                bus.$emit("sendCount",this.count);
             },
             sub() {
                 if (this.count <= 0) {
                     return
                 } else {
                     this.count--;
-                    this.sendcount();
+                    bus.$emit("sendCount",this.count);
                 }
             },
-            sendcount(){
-                this.$emit("send",this.count);
-            }
-        },
-        created() {
+            created() {
 
+            }
         }
     }
 </script>

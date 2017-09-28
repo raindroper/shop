@@ -1,7 +1,7 @@
 <template>
     <div>
         <mt-header fixed title="固定在顶部"></mt-header>
-        <router-view @send="getcount"></router-view>
+        <router-view></router-view>
         <nav class="mui-bar mui-bar-tab">
             <router-link class="mui-tab-item" to="/home">
                 <span class="mui-icon mui-icon-home"></span>
@@ -25,6 +25,9 @@
 
 
 <script>
+
+    import {bus} from "./component/goods/eventbus.js"
+
     export default {
         data() {
             return {
@@ -32,13 +35,20 @@
                 goodscount: 0
             }
         },
-        methods: {
-            getcount(input) {
-                this.goodscount = input;
-            }
-        },
-        created() {
+        methods: {},
+        created: function () {
+//            console.log(bus);
 
+            console.log(this);
+            bus.$on("sendCount", function (input) {
+                this.goodscount = input;
+                console.log(this);
+            }.bind(this));
+//            bus.$on("sendCount",input => {
+//                this.goodscount = input;
+//                console.log(this);
+//            })
+            console.log(bus);
         }
     }
 </script>

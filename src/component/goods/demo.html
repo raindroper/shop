@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非父子组件通信</title>
+    <script src="https://unpkg.com/vue@2.1.8/dist/vue.js"></script>
+</head>
+<body>
+<div id='app'>
+    <foo></foo>
+    <hr>
+    <bar></bar>
+</div>
+</body>
+<script>
+    var eventBus = new Vue({})
+    // foo 组件
+    var foo = {
+        template: '<div><p>the count of foo is {{fooCount}}</p>' +
+        '<button @click="addBar">add bar\'s count</button></div>',
+        data: function () {
+            return {
+                fooCount: 0
+            }
+        },
+        methods: {
+            addBar: function () {
+                // 触发事件
+                eventBus.$emit('addBar')
+            }
+        }
+    }
+    // bar 组件
+    var bar = {
+        template: '<div><p>the count of bar is {{barCount}}</p>' +
+        '<button>add foo\'s count</button></div>',
+        data: function () {
+            return {
+                barCount: 0
+            }
+        },
+        // 在 组件创建的钩子函数中 监听事件
+        created: function () {
+            eventBus.$on('addBar', function () {
+                this.barCount++
+            }.bind(this))
+        }
+    }
+    var vm = new Vue({
+        el: '#app',
+        components: {
+            foo,
+            bar
+        }
+    })
+</script>
+</html>
