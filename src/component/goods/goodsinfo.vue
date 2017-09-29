@@ -85,11 +85,13 @@
                 this.count = input;
             },
             send() {
+                if (this.count === 0) {
+                    return;
+                }
                 this.$emit("send", this.count);
-                setlocal({
-                    id: this.id,
-                    count: this.count
-                });
+                var itemObj = {};
+                itemObj[this.id] = this.count;
+                setlocal(itemObj);
                 this.scrollheight = this.$refs.box.offsetParent.scrollTop;
                 this.isshow = !this.isshow;
             },
@@ -98,13 +100,13 @@
                 el.style.left = "170px";
                 el.style.top = "400px";
             },
-            enter(el,done){
+            enter(el, done) {
                 el.offsetWidth;
                 el.style.left = "250px";
                 el.style.top = 600 + this.scrollheight + "px";
                 done();
             },
-            afterEnter(el){
+            afterEnter(el) {
                 this.isshow = !this.isshow;
             }
         },
@@ -182,7 +184,7 @@
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
-        z-index:9999;
+        z-index: 9999;
         position: absolute;
     }
 </style>
