@@ -23,3 +23,12 @@ export function concatid(obj) {
     idarr = idarr.substring(0, idarr.length - 1);
     return idarr;
 }
+
+export function savelocal(localObj) {
+    var data = localStorage.getItem("goodsitem") || "{}";
+    var obj = JSON.parse(data);
+    for (var k in localObj) {
+        obj[k] = localObj[k];
+    }
+    localStorage.setItem("goodsitem", JSON.stringify(obj));
+}
