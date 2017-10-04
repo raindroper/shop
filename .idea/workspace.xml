@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf4e371-0db5-46d3-8155-85109c353e78" name="默认" comment="购物车数据获取">
+    <list default="true" id="eaf4e371-0db5-46d3-8155-85109c353e78" name="默认" comment="购物车数据同步">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/car/car.vue" afterPath="$PROJECT_DIR$/src/component/car/car.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/component/subcom/carinput.vue" afterPath="$PROJECT_DIR$/src/component/subcom/carinput.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kits/local.js" afterPath="$PROJECT_DIR$/src/kits/local.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -369,7 +366,7 @@
       <workItem from="1506560235976" duration="17237000" />
       <workItem from="1506606624225" duration="7392000" />
       <workItem from="1506646130768" duration="12842000" />
-      <workItem from="1507109161209" duration="8741000" />
+      <workItem from="1507109161209" duration="8781000" />
     </task>
     <task id="LOCAL-00001" summary="日期格式化">
       <created>1506325975552</created>
@@ -448,11 +445,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506656049958</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="购物车数据同步">
+      <created>1507136283837</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1507136283838</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106616000" />
+    <option name="totallyTimeSpent" value="106656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -549,7 +553,8 @@
     <MESSAGE value="购物车数量本地存储" />
     <MESSAGE value="加入购物车小球动画" />
     <MESSAGE value="购物车数据获取" />
-    <option name="LAST_COMMIT_MESSAGE" value="购物车数据获取" />
+    <MESSAGE value="购物车数据同步" />
+    <option name="LAST_COMMIT_MESSAGE" value="购物车数据同步" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
